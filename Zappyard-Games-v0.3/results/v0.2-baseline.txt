@@ -1,0 +1,13 @@
+Zappyard Slot 01 — v0.2 baseline
+
+Monte Carlo spins: 500,000
+Seed: 8123
+Total RTP: 95.71163%
+Base RTP: 80.65601%
+Bonus RTP: 15.05562%
+Hit frequency: 33.1186%
+Bonus frequency: 1 / 191.4242
+Average cascades per paid spin: 0.399364
+Largest observed total win: 2570.35x
+
+Development-only measurement. Not production/certification math.

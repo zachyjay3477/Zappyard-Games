@@ -1,0 +1,59 @@
+Zappyard Slot 01 — v0.2 volatility validation
+
+Independent faithful run of the current v0.2 rules
+Seed: 3477
+Paid spins: 2,000,000
+
+RTP
+- Total RTP: 95.34645%
+- Base RTP: 80.71336%
+- Bonus RTP: 14.63309%
+
+Frequency / pacing
+- Hit frequency: 33.19780%
+- Bonus frequency: 1 in 190.79 paid spins
+- Average cascades per paid spin including feature cascades: 0.41771
+
+Observed tail
+- Largest total win: 1,560.25x
+- Largest base-game win: 324.50x
+- Largest free-spin feature: 1,559.40x
+
+Paid-spin total win distribution
+- 0x: 66.80220%
+- >0x to <1x: 15.33665%
+- 1x to <5x: 13.98100%
+- 5x to <20x: 3.33785%
+- 20x to <100x: 0.50785%
+- 100x to <500x: 0.03315%
+- 500x to <1,000x: 0.00105%
+- 1,000x to <5,000x: 0.00025%
+- 5,000x+: 0 observed
+
+Free-spin behavior
+- Features observed: 10,483
+- Average feature length: 8.330 spins
+- Average +1 BONUS spins awarded per feature: 2.923
+- Feature length <=5: 1,657
+- Feature length 6-10: 6,818
+- Feature length 11-15: 1,512
+- Feature length 16-20: 397
+- Feature length 21-30: 97
+- Feature length 31+: 2
+
+Powerup activity observed across paid + feature spins
+- Blast spawns: 43,705
+- Cross spawns: 3,219
+- Color Clear spawns: 626
+- Total powerup activations: 47,550
+- Unique tiles destroyed by powerups: 374,986
+
+Interpretation
+- RTP is close to the intended ~96% target and stable enough to continue.
+- Hit frequency is in the intended modern-cluster range.
+- The distribution is still much more mid-weight than the 50,000x headline ceiling suggests:
+  only 26 wins reached 500x+ in 2,000,000 paid spins, and none reached 5,000x.
+- Free Spins are the primary route to the largest observed wins.
+- Base-game max observed remained only 324.5x.
+- Before visual production, the next math task should be tail engineering:
+  preserve overall RTP while shifting a small amount of return out of ordinary wins and into rare multiplier/powerup chains.
