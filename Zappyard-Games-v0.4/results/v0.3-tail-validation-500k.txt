@@ -1,0 +1,35 @@
+Zappyard Slot 01 — v0.3 tail-engineering validation
+
+Independent faithful Monte Carlo run
+Seed: 3477
+Paid spins: 500,000
+
+v0.3 changes
+- Core game rules unchanged.
+- Base paytable reduced 3% across all paying symbols.
+- Powerup spawn odds are multiplied by 2.5 during Free Spins only.
+- Base-game powerup odds are unchanged.
+- Tile multiplier rules are unchanged.
+
+Measured results
+- Total RTP: 95.84376%
+- Base RTP: 77.91525%
+- Bonus RTP: 17.92851%
+- Hit frequency: 33.10980%
+- Bonus frequency: 1 in 192.31 paid spins
+- Largest observed total win: 2,220.62x
+
+Tail counts in 500,000 paid spins
+- 100x to <500x: 184
+- 500x to <1,000x: 12
+- 1,000x+: 5
+- 5,000x+: 0 observed
+
+Comparison to v0.2
+- Overall RTP remains essentially on target (~96%).
+- More RTP is concentrated inside Free Spins instead of ordinary base-game wins.
+- High-end outcomes improved materially; 1,000x+ wins are now present in a 500k sample.
+- The game still has a very rare extreme tail; absence of 5,000x+ in 500k spins is acceptable at this stage and should be validated in a much larger certification-style run later.
+
+Status
+v0.3 is the preferred math baseline for moving forward. It preserves the proven cluster/tile-multiplier model while giving the bonus more burst potential without introducing a new gameplay subsystem.

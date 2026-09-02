@@ -1,0 +1,56 @@
+Zappyard Slot 01 — v0.4 final micro-tune
+
+Design objective
+- Keep the game engaging at ordinary stake-session scale.
+- Preserve the existing ~33% hit frequency and small/medium-win cadence.
+- Ensure target RTP is at least ~96%.
+- Concentrate the incremental return in rare and super-rare outcomes rather than increasing routine wins.
+
+Math change from v0.3
+- 5–15 symbol cluster payouts: UNCHANGED.
+- 16+ symbol cluster payout bands: 6× their v0.3 values.
+- Symbol weights: unchanged.
+- BONUS frequency/rules: unchanged.
+- Tile multiplier growth: unchanged.
+- Base powerup odds: unchanged.
+- Free Spin powerup multiplier: unchanged at 2.5×.
+- Added explicit 50,000× max-win constant for the production ruleset.
+
+2,000,000 paid-spin validation
+Seed: 3477
+
+RTP / pacing
+- Total RTP: 96.43588%
+- Base RTP: 79.01795%
+- Bonus RTP: 17.41793%
+- Hit frequency: 33.20205%
+- Bonus frequency: 1 in 189.75
+- Average cascades per paid spin: 0.40021
+
+Observed tail
+- Largest total win: 7,068.68×
+- Largest base win: 1,643.66×
+- Largest feature win: 7,067.86×
+
+Paid-spin win distribution
+- 0×: 66.79795%
+- >0× to <1×: 15.33990%
+- 1× to <5×: 14.11720%
+- 5× to <20×: 3.20710%
+- 20× to <100×: 0.49930%
+- 100× to <500×: 0.03545%
+- 500× to <1,000×: 0.00220%  (44 / 2,000,000)
+- 1,000× to <5,000×: 0.00085% (17 / 2,000,000)
+- 5,000×+: 0.00005% (1 / 2,000,000)
+
+Why this distribution fits the target
+- The hit rate remains ~33.2%, so the game does not become materially deader.
+- The entire 5–15 cluster pay structure is untouched, preserving the small/medium reward loop.
+- The additional RTP is paid primarily through very large clusters, which are intrinsically rare.
+- 500×+ occurred about once per 32,258 paid spins in this sample.
+- 1,000×+ occurred about once per 111,111 paid spins.
+- 5,000×+ occurred once in 2,000,000 paid spins.
+- The theoretical ceiling remains 50,000×.
+
+Important statistical note
+Monte Carlo RTP is an estimate, not a mathematical guarantee. Because v0.4 deliberately puts more return into rare outcomes, measured RTP will fluctuate more between finite simulation runs. The 96.43588% figure is the current 2M-spin estimate; a much larger certification-style simulation and Stake Engine validation are still required before treating RTP as final/declared.
